@@ -15,9 +15,8 @@ class SecurityConfiguration {
             .csrf { csrf -> csrf.disable() }
             .authorizeHttpRequests { authorize ->
                 authorize
+                    .requestMatchers("/health").permitAll()
                     .requestMatchers(HttpMethod.OPTIONS).permitAll()
-
-                    .requestMatchers(HttpMethod.GET, "/api/v1/brands").permitAll()
 
 
                     .anyRequest().authenticated()

@@ -1,1 +1,1 @@
-rootProject.name = "vehicle-renter-profiles-service"
+rootProject.name = "profiles-service"

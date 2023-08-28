@@ -1,10 +1,10 @@
-package com.project.vehiclerenterprofileservice
+package com.vehiclerenter.profileservice
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class VehicleRenterProfileServiceApplicationTests {
+class ProfileServiceApplicationTests {
 
 	@Test
 	fun contextLoads() {

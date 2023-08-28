@@ -1,11 +1,11 @@
-package com.project.vehiclerenterprofileservice
+package com.vehiclerenter.profileservice
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class VehicleRenterProfileServiceApplication
+class ProfileServiceApplication
 
 fun main(args: Array<String>) {
-	runApplication<VehicleRenterProfileServiceApplication>(*args)
+	runApplication<ProfileServiceApplication>(*args)
 }

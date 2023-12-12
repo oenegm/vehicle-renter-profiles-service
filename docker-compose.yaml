@@ -56,13 +56,12 @@ services:
 
   profiles-service:
     container_name: profiles-service
-    build: .
-#    image: profile-service:latest
+    build:
+      context: .
+    image: profile-service:latest
     depends_on:
       profiles-db:
         condition: service_healthy
-    #      config-server:
-    #        condition: service_started
     environment:
       - 'DB_URL=jdbc:postgresql://profiles-db:5432/postgres'
       - 'DB_USERNAME=postgres'
@@ -74,6 +73,7 @@ services:
       - "8082:8082"
     networks:
       - "backend"
+
 
 networks:
   backend:
